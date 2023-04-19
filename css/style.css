@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    width: 5vh;
+    height: 5vh;
+    border: 1px solid black;
+}
+
+.mine {
+    background-image: url("/img/mine.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
