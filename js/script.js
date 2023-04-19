@@ -18,7 +18,6 @@ $('#qty').change( function(){
     setMines();
 });
 
-
 function setMines(){
     let mines = parseInt($('#qty').val());
     for(let i = 0; i < mines; i++){
@@ -35,4 +34,19 @@ function setMinesField(event){
 
 $('#btnMine').click(setMinesField);
 
+$("#field").ready(function(){
+    $("td").contextmenu( function(){
+        $(this).addClass("flag");
+    });
+});
+
+$("#field").ready(function(){
+    $("td").click(function(){
+        if(!$(this).hasClass("mines")) {
+            $(this).addClass("success");
+        } else {
+            $(this).addClass("mistake");
+        }
+    })
+});
 window.onload = createField;
