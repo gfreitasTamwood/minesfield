@@ -13,9 +13,18 @@ td {
     border: 1px solid black;
 }
 
-.mine {
+.mistake {
     background-image: url("/img/mine.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    background-color: red;
+}
+
+.success {
+    background-color: forestgreen;
+}
+
+.flag {
+    background-color: yellow;
 }
